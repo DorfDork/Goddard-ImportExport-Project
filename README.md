@@ -3,7 +3,7 @@
 ![preview](doc_images/preview.png)
 
 Hello! This is a plugin that will help you edit Mario's Head in the title screen of Super Mario 64.
-This plugin is modified to work specifically with the Render96dx repository with a brand new "GDB2" format (.gdbin), this is a DynOS specific format that allows you to load custom Goddard heads externally in the repository.
+This plugin is modified to work specifically with the Render96dx repository with a brand new "GDB2" format (.gd), this is a DynOS specific format that allows you to load custom Goddard heads externally in the repository.
 
 ## Installation
 
@@ -18,16 +18,16 @@ As you can see, you'll find the controls here in the 3D viewport. It's quite sim
 - First you must define where the source code for the render96dx repo is. You must select its root.
 - Then import the head the source already has (it takes from the source)
 - Edit the imported head to your heart's content. Be sure that it still has all of its weights. They're really important.
-- Once you're done, select the head root (The sphere empty) and chose which format you would like to export to, pressing "Export Goddard to SM64" exports the C files directly to the repository, pressing "Export Goddard GDB2" will open a window asking where you want to save the .gdbin file:
+- Once you're done, select the head root (The sphere empty) and chose which format you would like to export to, pressing "Export Goddard to SM64" exports the C files directly to the repository, pressing "Export Goddard GDB2" will open a window asking where you want to save the .gd file:
 
 ![export_window](doc_images/export_window.png)
 
 On the render96dx repository you can export a Goddard for each player that is in the base C player select. These include:
-- mario_head.gdbin
-- luigi_head.gdbin
-- wario_head.gdbin
-- toad_head.gdbin
-- waluigi_head.gdbin
+- mario_head.gd
+- luigi_head.gd
+- wario_head.gd
+- toad_head.gd
+- waluigi_head.gd
 
 One more thing. If you plan on creating a high poly head, you should probably enable `C Memory Management` to have the compiled game run successfully.
 

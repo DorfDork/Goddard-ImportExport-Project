@@ -73,10 +73,10 @@ class ExportGoddardGDB2(Operator, ExportHelper):
     bl_idname = "gd.export_goddard_gdb2"
     bl_description = "Export the head to GDB2 binary format with skin weights.\nThis format supports variable poly counts for DynOS packs."
     
-    filename_ext = ".gdbin"
+    filename_ext = ".gd"
     
     filter_glob: StringProperty(
-        default="*.gdbin",
+        default="*.gd",
         options={'HIDDEN'},
         maxlen=255,
     )
